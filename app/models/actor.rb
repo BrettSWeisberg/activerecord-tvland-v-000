@@ -6,4 +6,9 @@ class Actor < ActiveRecord::Base
      return "#{self.first_name} #{self.last_name}"
   end
 
+  def list_shows
+    self.shows.map do |show|
+      puts show
+    end
+  end
 end
