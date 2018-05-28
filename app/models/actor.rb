@@ -7,6 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_shows
+    binding.pry
     self.shows.map do |show|
       puts show
     end
