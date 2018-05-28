@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
   def catchphrase
-    self
+    self.catchphrase
     binding.pry
   end
 
