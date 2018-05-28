@@ -4,7 +4,7 @@ class Actor < ActiveRecord::Base
 
   def full_name
     binding.pry
-    self
+     puts self.first_name  && puts self.last_name
 
   end
 
