@@ -7,10 +7,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    
     self.characters.map do |role|
-      puts role
-      binding.pry
+      puts "#{role.name} #{role.show.name}"
     end
   end
 end
