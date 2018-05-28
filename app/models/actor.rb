@@ -8,8 +8,9 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     binding.pry
-    self.shows.map do |show|
-      puts show
+    self.characters.map do |role|
+      puts role
+      binding.pry
     end
   end
 end
