@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    binding.pry
+    
     self.characters.map do |role|
       puts role
       binding.pry
